@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "dsh-rea  reverse engineering tools",
-    "description": "REA (Reverse Engineer Anything) inside DSH: 170 reverse-engineering tools as mcp__rea__*, served by a local stdio MCP process. Binaries are never uploaded  the REA process runs on your machine, and only its findings reach the agent."
+    "title": "dsh-rea - reverse engineering tools",
+    "description": "REA (Reverse Engineer Anything) inside DSH: 170 reverse-engineering tools as mcp__rea__*, served by a local stdio MCP process. Binaries are never uploaded - the REA process runs on your machine, and only its findings reach the agent."
   }
 }
