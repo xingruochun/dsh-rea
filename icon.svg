@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dsh-rea plugin icon. The host's rules (dsh-app-boot iconOf): a relative path,
+     SVG/PNG/JPEG/WebP, <=256 KiB, inside the package. -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="dsh-rea">
+  <rect width="64" height="64" rx="12" fill="#0b1220"/>
+  <rect x="2" y="2" width="60" height="60" rx="10" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="27" cy="27" r="11" stroke="#7dd3fc" stroke-width="3.5"/>
+  <path d="M35 35 L47 47" stroke="#7dd3fc" stroke-width="4" stroke-linecap="round"/>
+  <path d="M22 27 h10 M27 22 v10" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

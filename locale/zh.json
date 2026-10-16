@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-rea  逆向工程工具集",
+    "description": "把 REA（Reverse Engineer Anything）接进 DSH：本地 stdio MCP 提供 170 个逆向工具，以 mcp__rea__* 出现在工具表里。二进制不上传REA 进程跑在你自己机器上，只有结论进入 agent 上下文。"
+  }
+}
