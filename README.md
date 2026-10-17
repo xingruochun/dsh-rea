@@ -22,14 +22,21 @@ never reported as "does not exist").
 
 ## Install
 
+From this repository (works today):
+
 ```
-dsh plugin --profile <your-profile> add @xingruochun/dsh-rea
+dsh plugin --profile <your-profile> add https://github.com/xingruochun/dsh-rea
 ```
 
 Or, in the DSH desktop app: **插件 -> 添加插件**, then paste
-`@xingruochun/dsh-rea`. A Git address works too -
-`https://github.com/xingruochun/dsh-rea` is accepted directly, so this plugin
-does not need to be in the curated marketplace.
+`https://github.com/xingruochun/dsh-rea` - a Git address is accepted directly,
+so this plugin does not need to be in the curated marketplace.
+
+Once the package is on npm, the name is shorter:
+
+```
+dsh plugin --profile <your-profile> add @xingruochun/dsh-rea
+```
 
 Restart DSH afterwards. The plugin page says so itself: "已安装，下次启动后加载。"
 
