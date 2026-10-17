@@ -1,4 +1,4 @@
-# dsh-rea
+# @xingruochun/dsh-rea
 
 **REA (Reverse Engineer Anything) inside DSH** - 170 reverse-engineering tools as
 `mcp__rea__*`, served by a local stdio MCP process.
@@ -23,12 +23,13 @@ never reported as "does not exist").
 ## Install
 
 ```
-dsh plugin --profile <your-profile> add https://github.com/xingruochun/dsh-rea
+dsh plugin --profile <your-profile> add @xingruochun/dsh-rea
 ```
 
 Or, in the DSH desktop app: **插件 -> 添加插件**, then paste
-`https://github.com/xingruochun/dsh-rea` (a Git address is accepted directly -
-this plugin does not need to be in the curated marketplace).
+`@xingruochun/dsh-rea`. A Git address works too -
+`https://github.com/xingruochun/dsh-rea` is accepted directly, so this plugin
+does not need to be in the curated marketplace.
 
 Restart DSH afterwards. The plugin page says so itself: "已安装，下次启动后加载。"
 
@@ -47,7 +48,7 @@ mirror registry does not help. Either of these does:
 dsh plugin --profile <your-profile> add git+https://ghproxy.net/https://github.com/xingruochun/dsh-rea.git
 
 # 2. Release tarball: tarballs skip the probe entirely
-dsh plugin --profile <your-profile> add https://ghproxy.net/https://github.com/xingruochun/dsh-rea/releases/download/v1.0.1/dsh-rea-1.0.1.tgz
+dsh plugin --profile <your-profile> add https://ghproxy.net/https://github.com/xingruochun/dsh-rea/releases/download/v1.0.2/xingruochun-dsh-rea-1.0.2.tgz
 ```
 
 A stale proxy in your git config causes the same timeout. Clearing it also fixes it:
@@ -94,7 +95,7 @@ The bundle mounts one row. A profile can override any of its fields:
 ## Uninstall
 
 ```
-dsh plugin --profile <your-profile> remove dsh-rea
+dsh plugin --profile <your-profile> remove @xingruochun/dsh-rea
 ```
 
 ## License
