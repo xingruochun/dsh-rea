@@ -35,6 +35,27 @@ Restart DSH afterwards. The plugin page says so itself: "已安装，下次启�
 The install pulls `rea-agents` from npm automatically. REA ships a prebuilt
 `dist/`, so no build script needs to be allowed.
 
+### If GitHub is unreachable
+
+Before pnpm runs, the plugin manager probes the repository with `git ls-remote`
+(5s timeout) - and that probe reads **your git's own proxy settings**, not the
+install-source switch. So if `github.com` times out on your machine, choosing a
+mirror registry does not help. Either of these does:
+
+```
+# 1. Accelerated git address: host is the mirror, so there is no probe at all
+dsh plugin --profile <your-profile> add git+https://ghproxy.net/https://github.com/xingruochun/dsh-rea.git
+
+# 2. Release tarball: tarballs skip the probe entirely
+dsh plugin --profile <your-profile> add https://ghproxy.net/https://github.com/xingruochun/dsh-rea/releases/download/v1.0.1/dsh-rea-1.0.1.tgz
+```
+
+A stale proxy in your git config causes the same timeout. Clearing it also fixes it:
+
+```
+git config --global --unset http.https://github.com.proxy
+```
+
 ## Ghidra (optional)
 
 REA's Ghidra backend needs a local Ghidra install. Without it you still get the

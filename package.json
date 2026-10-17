@@ -1,6 +1,6 @@
 {
   "name": "dsh-rea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "REA (Reverse Engineer Anything) inside DSH: 170 reverse-engineering tools as mcp__rea__*, served by a local stdio MCP process. Binaries never leave your machine.",
   "icon": "icon.svg",
@@ -16,14 +16,18 @@
   ],
   "dsh": {
     "manifestVersion": 1,
-    "bundle": { "patch": "./cordis.patch.yml" }
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xingruochun/dsh-rea.git"
   },
   "homepage": "https://github.com/xingruochun/dsh-rea#readme",
-  "bugs": { "url": "https://github.com/xingruochun/dsh-rea/issues" },
+  "bugs": {
+    "url": "https://github.com/xingruochun/dsh-rea/issues"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -41,9 +45,13 @@
     "@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.8"
   },
   "peerDependenciesMeta": {
-    "@deepseek-ai/dsh-mcp-client": { "optional": true }
+    "@deepseek-ai/dsh-mcp-client": {
+      "optional": true
+    }
   },
-  "engines": { "node": ">=20.0.0" },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "main": "index.js",
   "exports": {
     ".": "./index.js",
