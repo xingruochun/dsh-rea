@@ -77,7 +77,7 @@ async function buildOptions(ctx, config) {
   const entry = options.reaEntry ?? await resolveReaEntry();
   if (entry === undefined) {
     ctx?.logger?.warn?.(
-      'dsh-rea: rea-agents is not installed, so the REA tools are not mounted. '
+      '@xingruochun/dsh-rea: rea-agents is not installed, so the REA tools are not mounted. '
       + 'Install it in the profile that carries this bundle: npm install rea-agents',
     );
     return undefined;
@@ -115,7 +115,7 @@ async function buildOptions(ctx, config) {
 export async function apply(ctx, config = {}) {
   try {
     if (typeof ctx?.plugin !== 'function') {
-      ctx?.logger?.warn?.('dsh-rea: cordis context has no plugin(); REA tools not mounted');
+      ctx?.logger?.warn?.('@xingruochun/dsh-rea: cordis context has no plugin(); REA tools not mounted');
       return;
     }
 
@@ -127,7 +127,7 @@ export async function apply(ctx, config = {}) {
       client = await import('@deepseek-ai/dsh-mcp-client');
     } catch (error) {
       ctx?.logger?.warn?.(
-        'dsh-rea: @deepseek-ai/dsh-mcp-client is not resolvable, so the REA tools are not '
+        '@xingruochun/dsh-rea: @deepseek-ai/dsh-mcp-client is not resolvable, so the REA tools are not '
         + `mounted: ${error?.message ?? error}`,
       );
       return;
@@ -137,6 +137,6 @@ export async function apply(ctx, config = {}) {
     const component = ctx?.loader?.unwrapExports ? ctx.loader.unwrapExports(client) : client;
     ctx.plugin(component, options);
   } catch (error) {
-    ctx?.logger?.warn?.(`dsh-rea: MCP client not mounted: ${error?.message ?? error}`);
+    ctx?.logger?.warn?.(`@xingruochun/dsh-rea: MCP client not mounted: ${error?.message ?? error}`);
   }
 }
