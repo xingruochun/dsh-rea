@@ -1,6 +1,6 @@
 {
-  "name": "dsh-rea",
-  "version": "1.0.1",
+  "name": "@xingruochun/dsh-rea",
+  "version": "1.0.2",
   "type": "module",
   "description": "REA (Reverse Engineer Anything) inside DSH: 170 reverse-engineering tools as mcp__rea__*, served by a local stdio MCP process. Binaries never leave your machine.",
   "icon": "icon.svg",
@@ -57,5 +57,9 @@
     ".": "./index.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
     "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
