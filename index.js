@@ -1,5 +1,5 @@
 /**
- * dsh-rea  Host half.
+ * @xingruochun/dsh-rea  Host half.
  *
  * This bundle does not do any reverse engineering itself. It mounts ONE row:
  * the official DSH MCP client, wired to REA's own stdio MCP entry point. The
@@ -25,7 +25,7 @@
  *     which is a degradation, not an error.
  */
 
-export const name = 'dsh-rea';
+export const name = '@xingruochun/dsh-rea';
 
 /** Defaults for the row this bundle mounts. A profile may override any of them. */
 export const DEFAULT_MCP_CONFIG = Object.freeze({
