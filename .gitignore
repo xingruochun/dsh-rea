@@ -4,3 +4,4 @@ runtime/
 .DS_Store
 Thumbs.db
 PROGRESS.md
+*.tgz
