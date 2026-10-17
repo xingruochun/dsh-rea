@@ -1,4 +1,4 @@
-# dsh-rea  REA (Reverse Engineer Anything) inside DSH.
+# @xingruochun/dsh-rea  REA (Reverse Engineer Anything) inside DSH.
 #
 # This patch inserts ONE row: this package itself. It deliberately does not
 # name the official MCP client component, because a patch that instantiates a
@@ -12,7 +12,7 @@
 # so the same package works on any machine  nothing here is a local path.
 - insert:
     - id: dsh-rea
-      name: dsh-rea
+      name: '@xingruochun/dsh-rea'
       config:
         serverName: rea
         toolCallTimeoutMs: 300000
